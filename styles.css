@@ -154,8 +154,9 @@ footer{
     flex-direction: row;
     margin: 5% 0;
 }
-.footerContainer .logoFooter{
-    background-color: white;
+.footerContainer .logoFooter svg{
+    
+    fill:  white;
 }
 .footerContainer .contact{
     width: 50%;
@@ -193,14 +194,16 @@ footer{
     max-height: 20px;
     margin-right: 10%;
 }
+
 .footerContainer .socialLinks{
     width: 33.3%;
     display: flex;
     margin-top: 1.5%;
 }
-.footerContainer .socialLinks img{
-    max-height: 40px;
+.footerContainer .socialLinks svg{
+    height: 40px;
     margin: 5px;
+    fill: white;
 }
 .footerContainer .copyright{
     width: 100%;
@@ -208,3 +211,5 @@ footer{
     justify-content: flex-end;
     margin-bottom: 5%;
 }
+
+
