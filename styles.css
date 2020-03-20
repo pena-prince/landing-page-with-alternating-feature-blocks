@@ -108,6 +108,10 @@ button {
     align-content: center;
 }
 
+.cards h2 {
+    margin: 5% 0;
+}
+
 .contentContainer img {
     width: 85%;
     margin: 10%;
@@ -117,7 +121,7 @@ button {
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 60%;
+    width: 70%;
     margin: 5%;
 }
 
@@ -139,77 +143,161 @@ button {
 .overlayContainer .getStarted {
     margin: 7% 0 0 25%
 }
-footer{
+
+footer {
     background-color: hsl(192, 100%, 9%);
     width: 100%;
     color: white;
 }
-.footerContainer{
-    margin: 15% 5% 0 5%;
+
+.footerContainer {
+    margin: 150px 5% 0 5%;
     display: flex;
     flex-direction: column;
 }
-.footerContainer .copyFooter{
+
+.footerContainer .copyFooter {
     display: flex;
     flex-direction: row;
     margin: 5% 0;
 }
-.footerContainer .logoFooter svg{
-    
-    fill:  white;
+
+.footerContainer .logoFooter svg {
+    fill: white;
 }
-.footerContainer .contact{
+
+.footerContainer .contact {
     width: 50%;
     display: flex;
     flex-direction: column;
 }
-.footerContainer .nav{
+
+.footerContainer .nav {
     width: 50%;
     height: 150px;
     display: flex;
     margin-top: 1.5%;
     margin-left: 5%;
-    align-items: center;
-    justify-items: center;
-    
+    position: relative;
+    bottom: 32px;
 }
-.footerContainer .nav ul{
+
+.footerContainer .nav ul {
     width: 50%;
     list-style: none;
 }
-.footerContainer .nav li{
+
+.footerContainer .nav li {
     margin: 15%;
 }
-.footerContainer .nav a{
+
+.footerContainer .nav a {
     color: white;
     text-decoration: none;
 }
 
-.flex-row{
+.flex-row {
     display: flex;
     flex-direction: row;
-    margin:5% 0;
+    margin: 5% 0;
 }
-.icon1{
+
+.icon1 {
     max-height: 20px;
     margin-right: 10%;
 }
 
-.footerContainer .socialLinks{
+.footerContainer .socialLinks {
     width: 33.3%;
     display: flex;
     margin-top: 1.5%;
 }
-.footerContainer .socialLinks svg{
+
+.footerContainer .socialLinks svg {
     height: 40px;
     margin: 5px;
     fill: white;
 }
-.footerContainer .copyright{
+
+.footerContainer .copyright {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5%;
 }
 
+@media only screen and (max-width: 576px) {
 
+    h1 {
+        text-align: center;
+        font-size: 2rem !important;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.3rem !important;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    button {
+        width: 90% !important;
+        margin: 11% auto !important;
+    }
+    .overlayContainer {
+        width: 90%;
+    }
+    .copyOverlay h1 {
+        width: 100%;
+    }
+    .copyOverlay button {
+        margin-left: 5% !important;
+    }
+    .cards, .heroContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contentCopy {
+        order: 2;
+    }
+    .footerContainer .copyFooter {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footerContainer .copyFooter p {
+        text-align: left;
+    }
+    .footerContainer .contact {
+        width: 100%;
+    }
+    .footerContainer .nav {
+        margin: 5% 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .footerContainer .nav li {
+        margin: 10% 0 0 0;
+    }
+    .footerContainer .nav a {
+        font-size: 1.75rem;
+    }
+    .footerContainer .socialLinks {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+    .footerContainer {
+        margin-top: 35%;
+        flex-direction: column;
+    }
+    .footerContainer .copyright {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+}
